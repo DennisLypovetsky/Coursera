@@ -1,1 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
+h1 {
+	text-align: center;
+	margin: 15px 0 45px 0;
+	font-size: 1.75em;
+}
+
+section {
+	position: relative;
+	border: 3px solid black; /* 3px works better */
+	margin: 0 10px 20px 10px;
+	background-color: #B8B8B8;
+}
+
+p {
+	padding: 1.7em 0.5em 0.5em 0.5em;
+}
+
+h3 {
+	font-size: 1.25em;
+	width: 150px; /*maybe 33% is better?..*/
+	text-align: center;
+	border-bottom: 2px solid black; /* 2px will work */  
+	border-left: 2px solid black; /* 2px will work */ 
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#chicken {
+	background-color: red;
+	color: white;
+}
+
+#beef {
+	background-color: brown;
+	color: white;
+}
+
+#sushi {
+	background-color: green;
+	color: white;
+}
+
+#tabletwide {
+  	display: none;
+}
+
+/* ---------- desktop view ---------- */
+
+@media (min-width: 992px) {
+  .desktop {
+ 	float: left;
+}
+
+  .desktop {
+ 	width: 33.33%;
+}
+}
+
+/* ---------- tablet view ----------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .tablet {
+	float: left;
+	
+}
+
+  .tablet {
+	width: 50%;
+}
+
+  .tabletwide {
+  	width: 100%;
+}	
+
+  #tabletwide {
+  	display: inline; /* nice little additional text there for our tablet customers */
+}
+}
+
+/* ---------- mobile view ---------- */
+
+@media (max-width: 767px) {
+  .mobile {
+	float: left;
+}
+
+  .mobile {
+	width: 100%;
+}
+}
